@@ -173,16 +173,57 @@
 
       .read-more {
         font-weight: bold;
-        align-self: flex-start;
       }
 
       /* ===== Footer ===== */
       footer {
         background-color: #2c3e50;
-        color: #fff;
-        text-align: center;
-        padding: 1.5rem;
+        color: #ecf0f1;
+        padding: 2.5rem 1.5rem 1.5rem;
         margin-top: 3rem;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .footer-section h4 {
+        margin-bottom: 1rem;
+        color: #3498db;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section a {
+        color: #bdc3c7;
+      }
+
+      .footer-section a:hover {
+        color: #3498db;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #34495e;
+        color: #95a5a6;
+        font-size: 0.9rem;
       }
 
       /* ===== Responsive ===== */
@@ -197,6 +238,11 @@
 
         .articles-grid {
           grid-template-columns: 1fr;
+        }
+
+        .footer-container {
+          flex-direction: column;
+          text-align: center;
         }
       }
     </style>
@@ -274,7 +320,38 @@
 
     <!-- Footer -->
     <footer id="contact">
-      <p>&copy; 2025 TechBlog</p>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>เกี่ยวกับ</h4>
+          <ul>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">ทีมงาน</a></li>
+            <li><a href="#">ประวัติ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>หมวดหมู่</h4>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>ติดต่อ</h4>
+          <ul>
+            <li>Email: info@techblog.th</li>
+            <li>Phone: +66-2-xxx-xxxx</li>
+            <li>Bangkok, Thailand</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechBlog. สงวนลิขสิทธิ์</p>
+      </div>
     </footer>
   </body>
 </html>
