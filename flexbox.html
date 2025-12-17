@@ -226,8 +226,41 @@
         font-size: 0.9rem;
       }
 
-      /* ===== Responsive ===== */
+      /* ===== Tablet (769px–1024px) ===== */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .navbar {
+          padding: 1rem 1.5rem;
+        }
+
+        .logo {
+          font-size: 1.3rem;
+        }
+
+        .hero {
+          min-height: 50vh;
+        }
+
+        aside {
+          flex: 0 0 200px;
+        }
+
+        .articles-grid {
+          gap: 1.25rem;
+        }
+      }
+
+      /* ===== Mobile ===== */
       @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
         .main-layout {
           flex-direction: column;
         }
@@ -289,14 +322,14 @@
             <article class="article-card">
               <span class="article-date">16 ธ.ค. 2025</span>
               <h3>Flexbox คืออะไร</h3>
-              <p>เรียนรู้การจัด Layout ด้วย Flexbox แบบเข้าใจง่าย</p>
+              <p>เรียนรู้การจัด Layout ด้วย Flexbox</p>
               <a href="#" class="read-more">อ่านต่อ →</a>
             </article>
 
             <article class="article-card">
               <span class="article-date">15 ธ.ค. 2025</span>
               <h3>CSS Grid เบื้องต้น</h3>
-              <p>การจัด Layout แบบสองมิติที่ทรงพลัง</p>
+              <p>การจัด Layout แบบสองมิติ</p>
               <a href="#" class="read-more">อ่านต่อ →</a>
             </article>
 
@@ -309,8 +342,8 @@
 
             <article class="article-card">
               <span class="article-date">13 ธ.ค. 2025</span>
-              <h3>CSS Tips ที่ต้องรู้</h3>
-              <p>เทคนิค CSS ที่ช่วยให้เขียนโค้ดได้ดีขึ้น</p>
+              <h3>CSS Tips</h3>
+              <p>เทคนิค CSS ที่ต้องรู้</p>
               <a href="#" class="read-more">อ่านต่อ →</a>
             </article>
           </div>
@@ -326,7 +359,6 @@
           <ul>
             <li><a href="#">เกี่ยวกับเรา</a></li>
             <li><a href="#">ทีมงาน</a></li>
-            <li><a href="#">ประวัติ</a></li>
           </ul>
         </div>
 
@@ -335,7 +367,6 @@
           <ul>
             <li><a href="#">Web Development</a></li>
             <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Design</a></li>
           </ul>
         </div>
 
@@ -343,14 +374,13 @@
           <h4>ติดต่อ</h4>
           <ul>
             <li>Email: info@techblog.th</li>
-            <li>Phone: +66-2-xxx-xxxx</li>
             <li>Bangkok, Thailand</li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 TechBlog. สงวนลิขสิทธิ์</p>
+        <p>&copy; 2025 TechBlog</p>
       </div>
     </footer>
   </body>
